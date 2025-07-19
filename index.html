@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Georgia, serif;
+    }
+
+    body {
+      background-color: rgb(2, 2, 48);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Marquee Style */
+    .marquee {
+      background-color: rgb(39, 39, 121);
+      color: white;
+      padding: 10px;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 75px;
+      background-color: rgb(88, 88, 177);
+      padding: 0 40px;
+    }
+
+    nav .left {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: whitesmoke;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    nav ul li a:hover {
+      color: lightblue;
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 50px 0;
+    }
+
+    .leftSection {
+      width: 40%;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+    }
+
+    .leftSection div {
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    .RightSection {
+      width: 40%;
+    }
+
+    .RightSection img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  
+
+  <header>
+    <nav>
+      <div class="left">My Personal Portfolio</div>
+      <div class="right">
+        <ul>
+          
+          <li><a href="AboutMe.html">About Me</a></li>
+          <li><a href="Education.html">Education</a></li>
+          <li><a href="Internships.html">Internship</a></li>
+      
+          <li><a href="Contact.html">Contact</a></li>
+          <a href="C:\Users\Sonia\Downloads\resume_sonia_prasad_1 (1).pdf" class="resume-button" download target="_blank">
+    Download My Resume
+  </a>
+            <li></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hello, my name is <strong>Sonia Prasad</strong>.
+       <div class="marquee">
+        <marquee behavior="scroll" direction="left">I am actively looking for a job.</marquee></div>
+      </div>
+      <div class="RightSection">
+        <!-- Use relative path to your image file placed in an 'images' folder -->
+        <img src="C:\Users\Sonia\OneDrive\Desktop\personal portfolio\s.png.png" alt="Profile Image" />
+      </div>
+    </section>
+  </main>
+</body>
+</html>
